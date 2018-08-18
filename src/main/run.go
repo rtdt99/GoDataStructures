@@ -2,21 +2,17 @@ package main
 
 import (
 	"datastructures"
-	"fmt"
 )
 
 func main() {
-	myLinkedList := &datastructures.LinkedList{}
+	queue := new(datastructures.Queue)
 
-	myLinkedList.AddLast(12)
-	myLinkedList.AddLast(9)
-	myLinkedList.AddLast(2)
-	myLinkedList.AddLast(11)
-	myLinkedList.AddLast(9)
-	myLinkedList.Print()
+	queue.Enqueue(3)
+	queue.Enqueue(15)
+	queue.Enqueue(7)
+	queue.Enqueue(9)
+	queue.Enqueue(0)
 
-	fmt.Println()
-	myLinkedList.Delete(7)
-	myLinkedList.Delete(9)
-	myLinkedList.Print()
+	queue.Print()
+
 }
